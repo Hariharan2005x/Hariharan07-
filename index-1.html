@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <title>Hariharan D Personal Portfolio</title>
+  <style>
+  <body> 
+    {
+      font-family:Arial,sans-serif;
+      margin: 0;
+      padding:0;
+      <bg design="design.png">
+      </body>
+    }
+
+    header{
+      background-color:rgb(156, 167, 15);
+      color:black;
+      text-align:center;
+      padding:2rem 0;
+      position:relative;/*Add this*/
+ } 
+
+      .header-contect h1{
+        font-size:2.5rem;
+      } 
+
+      /*Add style for the round profile picture*/
+      .propile-picture{
+        width:100px;/*Adjust the size as needed*/
+        height:100px;
+        border-radius:85%;/*Create a circular shape*/
+        object-fit:cover;/*To ensure the image fills the circular area*/
+        position:absolute;/*Add this*/
+        top:75px;/*Adjust top position as needed*/
+        left:90px;/*Adjust left position as needed*/
+      }
+
+      nav{
+        background-color:rgb(241, 255, 47)
+        color:violiet;
+        text-align:center;
+      }
+
+      nav ul{
+          list-style-type:none;
+          padding:0px;
+      }
+
+      nav ul li{
+          display:inline;
+          margin:20px;
+      }
+
+
+      nav ul li a{
+          text-decoration:none;
+          color:rgb(119, 0, 255);
+      }
+
+      .section-contect{  
+        background-color:rgb(156, 189, 26);
+        padding:2rem;
+        margin:1rem;
+        border-radius:20px;
+        box-shadow:0 0 10px:greenyellow;
+      }
+
+      .download-button{
+        background-color:rgb(219, 0, 0);
+        color:darkblue;
+        padding:0.5rem 1rem;
+        text-decoration:none;
+        border-radius:20px;
+        display:inline_block;
+        margin-top:10px;
+      }
+
+      .download-button:hover{
+        background-color:plum;
+      }
+
+      footer{
+        text-align:center;
+        padding:1rem 0;
+        background-color:rgb(156, 158, 6);
+        color:#fff;
+      }
+
+      ul{
+        list-style-type:square;
+        padding-left:20px;
+      }
+  </style>    
+</head>
+</body>
+  <header> 
+    <div class=""header-contect">
+      <!--Add your profile picture here-->
+      <img src="image.JPG" alt="Your picture"class="propile-picture">
+      <h1>Hariharan D</h1> 
+      <p>Passionate on LEARNING</p> 
+      </div>
+  </header>
+  <nav>
+   <ul>
+       <li><a href="#about">About</a></li>
+       <li><a href="#skills">skills</a></li>
+       <li><a href="#projects">projects</a></li>
+       <li><a href="#contact">contact</a></li>
+   </ul>
+  <section id="skills"> 
+   <h2>Skills</h2>
+   <div class="section-content">
+   <ul class="skills-list">
+       <li>HTML</li>
+       <li>CSS</li>
+       <li>JavaScript</li>
+       <li>JS</li>
+       <li>PROGRAMMING</li>
+   </ul>
+   </div>
+   </section>
+
+   <section id="education">
+    <h2>Education</h2>
+    <div class="secrion-content">
+        <H2>COMPUTER APPLICATION STUDENT</H2>
+        <p>THANTHAI PERIYAR GOVT.ARTS AND SCIENCE COLLEGE,TRICHIRAPPALLI</p>
+    </div>
+   </section>
+
+   <section id="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+        <p>Hi I am Hariharan,I am studing BCA in Thanthai periyar Govt.arts and Science College in Trichy.</p>
+    </div>
+   </section>
+
+  <section id="projects"> 
+    <h2>Projects</h2>
+    <div class="projects">
+       <h3>project Title</h3>
+       <ul>
+       <p>Project description</p>
+       <li><a href="hari.png">project 1</a></li><br><br>
+       <li><a href="repo">project 2</a></li>
+       <!--Add more project links here-->
+       </ul>   
+    </div>
+  </section>
+
+  <section id="resume">
+    <center>
+    <div class="section contect"   
+    <h2>RESUME</h2><br><br>
+     <a href="resume.jpg" class="download-button">Download CV</a><br>
+     </div>
+    </center>    
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Hariharan D</p>
+  </footer>
+
+  <script>
+     //Smooth scrolling to section when clicking on navigation links
+     document.querySelectorAll('a[href^="#"]').forEach(anchor=> {
+        anchor.addEventListener('click',function(e){
+            e.preventDefault();
+        
+            const targetId=this.getAttribute('href').substring(1);
+            const targetElement=document.getElementById(targetId);
+    
+            if(targetElement){
+               window.scrollTo({
+                 top:targetElement.offsetTop,
+                 behavior:'smooth'
+               });
+             } 
+        });
+     });
+   </script> 
+</body>
+</html>        
+
+</html>
+
